@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:transitionName="logo_image"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:src="@drawable/applogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="TODO" />
+
+
+
+    <TextView
+        android:transitionName="logo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/create_your_account"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:textColor="#0A3C48"
+        android:textSize="16sp"/>
+
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/first_name"
+            android:layout_weight="1"
+            android:hint="First"
+            android:transitionName="email_tran"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="200dp"
+
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/last_name"
+            android:hint="Last"
+            android:transitionName="email_tran"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:transitionName="email_tran"
+            android:hint="Username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:inputType="text"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_number"
+            android:hint="Phone Number"
+            android:transitionName="email_tran"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:transitionName="password_tran"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:textColor="#303030"
+            android:elevation="0dp"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:transitionName="forgot_password_tran"
+            android:text="By tapping Sign up you accept all terms and condition"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"/>
+
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_marginTop="20dp"
+            android:text="SIGN UP"
+            android:transitionName="sigin_tran"
+            android:layout_margin="15dp"
+            android:background="#4CB32B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/existing_user_login"
+            android:transitionName="new_user_tran"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:textColor="#4CB32B"
+            android:elevation="0dp"
+            android:textAlignment="center"
+            android:text="Already have an account? Log In"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

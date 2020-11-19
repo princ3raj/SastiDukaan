@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "44455397272",
+    "firebase_url": "https://sastidukaan-9be75.firebaseio.com",
+    "project_id": "sastidukaan-9be75",
+    "storage_bucket": "sastidukaan-9be75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44455397272:android:2fdf3a1d0b7715016acded",
+        "android_client_info": {
+          "package_name": "sasti.dukaan.grocerystorecompany"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44455397272-81q3580mh61l2elqh0boghu2eenme7i1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sasti.dukaan.grocerystorecompany",
+            "certificate_hash": "09a3836541ffbd7e726085a2d53f32ff7d5ee36e"
+          }
+        },
+        {
+          "client_id": "44455397272-fespvhpok0khre4gh66k8ekldcnk60sg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY4i7WdGWUlpO1Dy-FdwtVyJrdw7kLqgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44455397272-fespvhpok0khre4gh66k8ekldcnk60sg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
