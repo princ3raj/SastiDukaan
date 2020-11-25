@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sasti.dukaan.grocerystorecompany.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+            <!--Example with RelativeLayout and Gradient Drawable -->
+            <!-- for Recycler view use any of the layout as model-->
+            <androidx.cardview.widget.CardView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    android:background="@drawable/category_gradient"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:text="Fruits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_margin="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_fruit"
+                        android:layout_width="50dp"
+                        android:layout_height="62dp"/>
+
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!--vegetables-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    android:background="@drawable/category_gradient"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:text="Vegetables"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_margin="8dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_vegetables"
+                        android:layout_width="50dp"
+                        android:layout_height="62dp"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--grain-->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    android:background="@drawable/category_gradient"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:text="Grain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_margin="8dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_grain"
+                        android:layout_width="50dp"
+                        android:layout_height="62dp"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--dairy-->
+            <androidx.cardview.widget.CardView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    android:background="@drawable/category_gradient"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:text="Dairy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:layout_margin="8dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_dairy"
+                        android:layout_width="50dp"
+                        android:layout_height="62dp"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

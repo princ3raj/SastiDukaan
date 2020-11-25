@@ -13,8 +13,8 @@
         android:layout_gravity="center"
         android:layout_margin="15dp"
         android:src="@drawable/applogo"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:contentDescription="TODO" />
 
 
