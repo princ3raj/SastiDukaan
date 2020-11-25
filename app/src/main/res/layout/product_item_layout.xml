@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="18dp"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+
+
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/product_image"
+                android:layout_margin="34dp"
+                android:src="@drawable/atta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+            <TextView
+                android:id="@+id/product_price"
+                android:fontFamily="@font/poppins"
+                android:layout_marginStart="28dp"
+                android:textColor="#384144"
+                android:textSize="24sp"
+                android:layout_marginTop="210dp"
+                android:text="Rs.300"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

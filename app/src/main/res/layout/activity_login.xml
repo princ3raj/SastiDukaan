@@ -14,8 +14,8 @@
         android:layout_gravity="center"
         android:layout_margin="15dp"
         android:src="@drawable/applogo"
-        android:layout_width="200dp"
-        android:layout_height="200dp"/>
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
 
 
 
@@ -80,6 +80,14 @@
 
 
         </com.google.android.material.textfield.TextInputLayout>
+
+
+        <CheckBox
+            android:id="@+id/remember_me_checkbox"
+            android:text="Remember me"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/forgot_password_button"

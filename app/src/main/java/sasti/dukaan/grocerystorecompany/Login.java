@@ -9,8 +9,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.Pair;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,6 +24,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Objects;
 
+import io.paperdb.Paper;
+import sasti.dukaan.grocerystorecompany.Prevalent.Prevalent;
+
 public class Login extends AppCompatActivity {
 
 
@@ -34,6 +37,9 @@ public class Login extends AppCompatActivity {
     ImageView logoImage;
     TextView signin_slogan;
     TextInputLayout username,password;
+    private String parentDbname="Users";
+
+    private CheckBox RememberMe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +50,8 @@ public class Login extends AppCompatActivity {
 
 
 
-
+        RememberMe=findViewById(R.id.remember_me_checkbox);
+        Paper.init(this);
 
         newUserSignupButton=findViewById(R.id.new_user_signp);
 
@@ -155,7 +162,13 @@ public class Login extends AppCompatActivity {
     private void isUser() {
 
         final String userEnteredUsername=username.getEditText().getText().toString().trim();
-        final String userEnteredPassword=password.getEditText().getText().toString().trim()  ;
+        final String userEnteredPassword=password.getEditText().getText().toString().trim();
+
+        if(RememberMe.isChecked()){
+
+            Paper.book().write(Prevalent.UserUsernameKey,userEnteredUsername);
+            Paper.book().write(Prevalent.UserPasswordKey,userEnteredPassword);
+        }
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
 
@@ -193,7 +206,7 @@ public class Login extends AppCompatActivity {
                         String last_nameFromDB= snapshot.child(userEnteredUsername).child("last_name").getValue(String.class);
                         String phoneNumberFromDB= snapshot.child(userEnteredUsername).child("phone_number").getValue(String.class);
 
-                        Intent intent = new Intent(getApplicationContext(),Dashboard.class);
+                        Intent intent = new Intent(getApplicationContext(), DashBoard.class);
 
                         intent.putExtra("username",usernameIdFromDB);
                         intent.putExtra("first_name",first_nameFromDB);
